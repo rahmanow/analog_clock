@@ -4,12 +4,12 @@ body {
     justify-content: center;
     height: 100vh;
     background: #D3DDE6;
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
 }
 .card {
     width: 300px;
     height: 550px;
-    background-color: aliceblue;
+    background-color: #e5eaf373;
     border: 1px solid #F2F5FA;
     border-radius: 20px;
     position: relative;
@@ -106,6 +106,50 @@ body {
     margin: auto;
 }
 
+.three {
+    position: absolute;
+    margin: auto;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    top: 45%;
+    font-size: 30px;
+    color: #bcc4d273;
+}
+
+.six {
+    position: absolute;
+    margin: auto;
+    bottom: 40px;
+    left: 47%;
+    height: 20px;
+    width: 20px;
+    font-size: 30px;
+    color: #bcc4d273;
+}
+
+.nine {
+    position: absolute;
+    margin: auto;
+    left: 15px;
+    top: 45%;
+    height: 20px;
+    width: 20px;
+    font-size: 30px;
+    color: #bcc4d273;
+}
+
+.twelve {
+    position: absolute;
+    margin: auto;
+    right: 49%;
+    top: 40px;
+    height: 20px;
+    width: 20px;
+    font-size: 30px;
+    color: #bcc4d273;
+}
+
 .timing {
     text-align: center;
 }
@@ -114,7 +158,13 @@ body {
         font-size: 60px;
         font-family: sans-serif;
 }
+.timing .secs {
+    vertical-align: text-top;
+    font-size: smaller;
+    margin-bottom: -12px;
+}
 
-.timing h4 {
-        margin-top: 2px;
+h4 {
+    text-align: center;
+    margin-top: 2px;
 }
