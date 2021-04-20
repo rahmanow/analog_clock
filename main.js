@@ -16,5 +16,18 @@ const clock = () => {
     document.querySelector('.minute').style.transform = `rotate(${minute}deg)`;
     document.querySelector('.second').style.transform = `rotate(${second}deg)`;
  }
+const classes = document.getElementsByClassName('currentDate');
 
- setInterval(clock, inter);
+Object.values(classes).forEach(val => {
+    val.innerHTML = moment().format('LL');
+})
+
+   /* .forEach(val => {
+    console.log(val);
+})*/
+
+//
+
+console.log(classes);
+
+setInterval(clock, inter);

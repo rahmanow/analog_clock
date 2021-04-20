@@ -51,7 +51,7 @@ body {
     width: 300px;
     height: 350px;
     border-radius: 100%;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .wrap .hour, .wrap .minute {
@@ -115,6 +115,6 @@ body {
         font-family: sans-serif;
 }
 
-.timing p {
+.timing h4 {
         margin-top: 2px;
 }
