@@ -21,27 +21,100 @@ body {
     justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
+}
 
-    h3{
+.top-menu h3 {
         font-size: 14px;
         font-weight: 400;
         margin-top: 15px;
         color: #000;
         text-transform: uppercase;
-    }
-    .battery {
+}
+.top-menu .battery {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        span {
+}
+.top-menu .battery span {
             font-size: 14px;
             font-weight: 600;
             margin-right: 3px;
-        }
+}
 
-        img {
+.top-menu .battery img {
             width: 20px;
-        }
-    }
+}
+
+.wrap {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 100%;
+    margin-top: -30px;
+}
+
+.wrap .hour, .wrap .minute {
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+}
+
+.wrap .minute {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    transform: rotate(90deg);
+}
+
+.wrap .second {
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    top: -26%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #FF4B3E;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+
+.wrap .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background: white;
+    border: 2px solid #1b1b1b;
+    margin: auto;
+}
+
+.timing {
+    text-align: center;
+}
+
+.timing span {
+        font-size: 60px;
+        font-family: sans-serif;
+}
+
+.timing p {
+        margin-top: 2px;
 }
