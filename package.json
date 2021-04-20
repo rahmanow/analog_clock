@@ -1,5 +1,26 @@
 {
-  "dependencies": {
-    "moment": "^2.29.1"
-  }
+  "name": "analog_clock",
+  "description": "Analog Clock with HTML, CSS and JavaScript",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahmanow/analog_clock.git"
+  },
+  "keywords": [
+    "analog",
+    "clock",
+    "javascript",
+    "css",
+    "html"
+  ],
+  "author": "Azat Rahmanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahmanow/analog_clock/issues"
+  },
+  "homepage": "https://github.com/rahmanow/analog_clock#readme"
 }

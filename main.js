@@ -1,5 +1,7 @@
 let inter = 1000;
-
+let analogClock = (selector, time) => {
+    document.querySelector(selector).style.transform = `rotate(${time}deg)`;
+}
 const clock = () => {
     const date = new Date();
     const hours = date.getHours();
@@ -12,22 +14,15 @@ const clock = () => {
     const m = (minutes < 10) ? "0" + minutes : minutes;
     document.querySelector('.hours').innerHTML = h;
     document.querySelector('.mins').innerHTML = m;
-    document.querySelector('.hour').style.transform = `rotate(${hour}deg)`;
-    document.querySelector('.minute').style.transform = `rotate(${minute}deg)`;
-    document.querySelector('.second').style.transform = `rotate(${second}deg)`;
- }
+    analogClock('.hour', hour);
+    analogClock('.minute', minute);
+    analogClock('.second', second);
+}
+
 const classes = document.getElementsByClassName('currentDate');
 
 Object.values(classes).forEach(val => {
-    val.innerHTML = moment().format('LL');
+    val.innerHTML = (new Date()).toString().split(' ').splice(1,3).join(' ');
 })
-
-   /* .forEach(val => {
-    console.log(val);
-})*/
-
-//
-
-console.log(classes);
 
 setInterval(clock, inter);
